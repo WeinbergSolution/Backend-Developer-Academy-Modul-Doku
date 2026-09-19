@@ -1,0 +1,236 @@
+# ============================================================
+# Backend Developer Academy – Global .gitignore
+# Gilt für alle Module und Unterordner dieses Repositories
+# ============================================================
+
+
+# ------------------------------------------------------------
+# Environment Variables / Secrets
+# NIEMALS Tokens, Passwörter oder API-Keys committen
+# ------------------------------------------------------------
+
+.env
+.env.*
+!.env.example
+
+
+# ------------------------------------------------------------
+# Python – Virtual Environments
+# ------------------------------------------------------------
+
+.venv/
+venv/
+env/
+ENV/
+
+
+# ------------------------------------------------------------
+# Python – Cache / kompilierte Dateien
+# ------------------------------------------------------------
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+
+# ------------------------------------------------------------
+# Python – Build / Distribution
+# ------------------------------------------------------------
+
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+
+# ------------------------------------------------------------
+# Python – Testing / Coverage
+# ------------------------------------------------------------
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py.cover
+
+
+# ------------------------------------------------------------
+# Python – Type Checker / Linter Cache
+# ------------------------------------------------------------
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+.pyre/
+.pytype/
+.ruff_cache/
+
+
+# ------------------------------------------------------------
+# Django
+# ------------------------------------------------------------
+
+*.log
+local_settings.py
+
+# Lokale Django-Datenbanken
+db.sqlite3
+db.sqlite3-journal
+*.sqlite3
+*.sqlite3-journal
+
+# Von Django erzeugte Uploads / statische Dateien
+media/
+staticfiles/
+
+
+# ------------------------------------------------------------
+# Flask / andere mögliche Python Backends
+# ------------------------------------------------------------
+
+instance/
+.webassets-cache
+
+
+# ------------------------------------------------------------
+# Jupyter Notebook
+# ------------------------------------------------------------
+
+.ipynb_checkpoints/
+
+
+# ------------------------------------------------------------
+# IDE / Editor
+# ------------------------------------------------------------
+
+.vscode/
+.idea/
+
+*.code-workspace
+
+# Vim
+*.swp
+*.swo
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+
+# ------------------------------------------------------------
+# Betriebssystem
+# ------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+
+# ------------------------------------------------------------
+# Temporäre Dateien
+# ------------------------------------------------------------
+
+*.tmp
+*.temp
+*.bak
+*.backup
+*.old
+*.orig
+
+tmp/
+temp/
+
+
+# ------------------------------------------------------------
+# Logs
+# ------------------------------------------------------------
+
+logs/
+*.log
+
+
+# ------------------------------------------------------------
+# Node.js / Frontend
+# Falls innerhalb eines Backend-Projekts ein Frontend verwendet wird
+# ------------------------------------------------------------
+
+node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+.npm/
+.yarn/
+
+# Frontend Build-Dateien
+.next/
+.nuxt/
+dist/
+.cache/
+
+
+# ------------------------------------------------------------
+# Postman
+# ------------------------------------------------------------
+
+# Lokale Postman Environment Dateien können Secrets enthalten
+*.postman_environment.json
+
+# Collections dürfen grundsätzlich committed werden!
+# *.postman_collection.json wird daher NICHT ignoriert.
+
+
+# ------------------------------------------------------------
+# Sonstige Secrets / Credentials
+# ------------------------------------------------------------
+
+*.pem
+*.key
+*.p12
+*.pfx
+
+credentials.json
+secrets.json
+secret.json
+
+
+# ------------------------------------------------------------
+# Lokale Konfiguration
+# ------------------------------------------------------------
+
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

@@ -1,0 +1,27 @@
+{
+    "todos": [
+        {
+            "id": "1",
+            "title": "obst kaufen"
+        },
+        {
+            "id": "2",
+            "title": "Milch kaufen"
+        },
+        {
+            "title": "spazieren gehn",
+            "id": "D1pZEXFEDws"
+        }
+    ],
+    "notes": [
+        {
+            "id": "1",
+            "title": "note 1"
+        },
+        {
+            "id": "2",
+            "title": "note 2"
+        }
+    ],
+    "$schema": "./node_modules/json-server/schema.json"
+}
